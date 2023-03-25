@@ -15,11 +15,11 @@ The End-Effector of a robot is defined as the end-point of the last segment in a
 ### Theory
 For this project, a robot is simply a chain of segments connected through joints. To achieve a robot system, we first establish a fixed co-ordinate system which is the “Base Frame” to which all objects are referenced to. Suppose we assume (x0, y0) as the starting point of our robot system, and we have a two-link planar robot as shown below:
 
-<>
+<img src = "Diagrams/Geometrical Diagram.png" width = 400>
 
 Then the co-ordinates of (x2,y2) is: 
 
-<>
+<img src = "Diagrams/End Effector Co-ordinates.png" width = 400>
 
 where α1 and α2 are the lengths of the two segments of the robot.\
 Note that the entire process is called as "Forward Kinematics"
@@ -27,7 +27,7 @@ Note that the entire process is called as "Forward Kinematics"
 ## Input/Output Description
 The following diagram describes the Input/Output description 
 
-<>
+<img src = "Diagrams/Input Output.png" width = 800>
 
 ## Test Cases
 ### Test Case 1: Invalid number of Test Cases
@@ -62,16 +62,16 @@ Enter corresponding angle in radians 3 : 0 *(Angle of fourth segment with x-axis
 
 ### Test Case 3: Straigt Line Robot
 Enter the number of Segments: 5 *(Valid Input)*\
-Enter length of Segment 1 : 12 (Length of first segment)
-Enter corresponding angle in radians 0 : 0.45 (Angle of first segment with x-axis)
-Enter length of Segment 2 : 28 (Length of second segment)
-Enter corresponding angle in radians 1 : 0.45 (Angle of second segment with x-axis)
-Enter length of Segment 3 : 15 (Length of third segment)
-Enter corresponding angle in radians 2 : 0.45 (Angle of third segment with x-axis)
-Enter length of Segment 4 : 19 (Length of fourth segment)
-Enter corresponding angle in radians 3 : 0.45 (Angle of fourth segment with x-axis)
-Enter length of Segment 5 : 9 ((Length of fifth segment)
-Enter corresponding angle in radians 4 : 0.45 (Angle of fifth segment with x-axis)
+Enter length of Segment 1 : 12 *(Length of first segment)*\
+Enter corresponding angle in radians 0 : 0.45 *(Angle of first segment with x-axis)*\
+Enter length of Segment 2 : 28 *(Length of second segment)*\
+Enter corresponding angle in radians 1 : 0.45 *(Angle of second segment with x-axis)*\
+Enter length of Segment 3 : 15 *(Length of third segment)*\
+Enter corresponding angle in radians 2 : 0.45 *(Angle of third segment with x-axis)*\
+Enter length of Segment 4 : 19 *(Length of fourth segment)*\
+Enter corresponding angle in radians 3 : 0.45 *(Angle of fourth segment with x-axis)*\
+Enter length of Segment 5 : 9 *((Length of fifth segment)*\
+Enter corresponding angle in radians 4 : 0.45 *(Angle of fifth segment with x-axis)*\
 10.8054 5.21959\
 36.0179 17.3986\
 49.5246 23.9231\
@@ -79,4 +79,4 @@ Enter corresponding angle in radians 4 : 0.45 (Angle of fifth segment with x-axi
 74.7371 36.1021
 
 ## User Guide
-The program creates a multi-degree of freedom of robot which has the user's desired degrees of freedom. The number of segments, their respective lengths and their angles (in radians) with the positive x-axis is taken as input and the all joints' location along with the End-Effector is printed.  
+The program creates a multi-degree of freedom of robot which has the user's desired degrees of freedom. The number of segments, their respective lengths and their angles (in radians) with the positive x-axis is taken as input and the all joints' location along with the End-Effector is printed.
